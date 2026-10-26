@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lec14_form5</title>
+</head>
+
+<body>
+    <h1>Create Account </h1>
+    <form action="" method="get">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter name" required>
+        <br><br>
+
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+        <br><br>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+        <br>
+
+        <p><strong> Choose your major: </strong></p>
+        <input type="radio" id="cs" name="major" value="cs" required>
+        <label for="cs">Computer Science</label>
+        <br>
+        <input type="radio" id="cse" name="major" value="cse" required>
+        <label for="cse">Computer System</label>
+        <br><br>
+
+        <label for="class"> Education level </label>
+        <select name="class" id="class">
+            <option value="select">Choose level</option>
+            <option value="one">First year</option>
+            <option value="two">Second year</option>
+            <option value="three">Third year</option>
+            <option value="four">Fourth year</option>
+            <option value="five">Fifth year</option>
+        </select>
+
+
+        <p><strong> Choose your Skills: </strong></p>
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+        <br>
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label>
+        <br>
+        <input type="checkbox" id="js" name="skills" value="js">
+        <label for="js">JavaScript</label>
+        <br><br>
+
+        <label for="level">Level: </label>
+        <select name="level" id="level">
+            <option value="select">Choose level</option>
+            <option value="beginner"> مبتدئ </option>
+            <option value="intermediate">متوسط</option>
+            <option value="advanced">متقدم</option>
+        </select>
+        <br><br>
+
+
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+
+
+
+    </form>
+
+
+</body>
+
+</html>
