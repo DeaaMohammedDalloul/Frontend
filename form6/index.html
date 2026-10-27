@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form6</title>
+</head>
+
+<body>
+    <form action="form6.php" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Name" required><br><br>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
+            </div>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone" required><br><br>
+            </div>
+
+            <div>
+                <label for="image">Profile Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required><br><br>
+
+                <div>
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" placeholder="Enter your bio" rows="4" required></textarea><br><br>
+                </div>
+        </fieldset>
+
+        <fieldset>
+
+
+            <div>
+                <p><strong>Choose your major:</strong></p>
+                <label><input type="radio" name="major" value="computer_science"> Computer Science</label><br>
+                <label><input type="radio" name="major" value="computer_system"> Computer System</label>
+
+
+            </div><br>
+
+            <div>
+                <p><strong> Choose your Skills: </strong></p>
+
+                <label><input type="checkbox" id="html" name="skills[]" value="html"> HTML</label>
+                <br>
+
+                <label><input type="checkbox" id="css" name="skills[]" value="css">CSS</label>
+                <br>
+                <label> <input type="checkbox" id="js" name="skills[]" value="js"> JavaScript</label>
+                <br><br>
+            </div>
+
+
+        </fieldset>
+        <br>
+
+
+        <button>Register</button>
+        <button type="reset">Reset</button>
+
+
+
+
+
+</body>
+
+</html>
